@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ALPHASPHERE</title>
+	<link rel="stylesheet" href="../manu/styles.css">
+</head>
+<link rel="stylesheet" href="../manu/fonts.css">
+<link rel="shortcut icon" href="../manu/favicon.ico" type="image/x-icon">
+<style>
+	h1 {
+		font-family: 'orbitron', sans-serif;
+	}
+
+	h2 {
+		font-family: 'audiowide', sans-serif;
+	}
+
+	p {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	button {
+		font-family: 'audiowide', sans-serif;
+
+	}
+
+	strong {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	label {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	ul li a {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	/* Styling for the overlay background */
+	.overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+	/* Styling for the login box */
+	.login-box {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: black;
+		padding: 20px;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+	}
+
+	.sign-up-box {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: black;
+		padding: 20px;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+	}
+
+	input[type="submit"] {
+		width: 200px;
+		padding: 15px 0;
+		text-align: center;
+		margin: 20px 10px;
+		border-radius: 25px;
+		font-weight: bold;
+		border: 2px solid #009688;
+		background: transparent;
+		color: white;
+		cursor: pointer;
+		/* The cursor property specifies the mouse cursor to be displayed 
+    when pointing over an element. */
+		position: relative;
+		overflow: hidden;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #45a049;
+		transition: 0.4s;
+	}
+
+	.button_login:hover {
+		background-color: #009688;
+		transition: 0.4s;
+	}
+
+	.close_button:hover {
+		background-color: red;
+		transition: 0.4s;
+	}
+
+	.planet button{
+		font-family: 'robotomono', sans-serif;
+	}
+</style>
+
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<a href="../manu/home2.html"><img src="../manu/logo3.png" alt="logo" class="logo"></a>
+			<ul>
+				<li><a href="../manu/home2.html">Home</a></li>
+				<li><a href="#">Universe</a></li>
+				<li><a href="../manu/planets.html">
+
+						<!-- Dropdown container -->
+						<div class="dropdown">
+							<button class="navbar planet">Planets</button>
+						</a>
+							<!-- Dropdown content -->
+							<div class="dropdown-content">
+								<a href="planets/1mercury.html"> Mercury</a>
+								<a href="planets/1venus.html"> Venus</a>
+								<a href="planets/1earth.html"> Earth</a>
+								<a href="planets/1mars.html"> Mars</a>
+								<a href="planets/1jupiter.html"> Jupiter</a>
+								<a href="planets/1saturn.html"> Saturn</a>
+								<a href="planets/1uranus.html"> Uranus</a>
+								<a href="planets/1neptune.html"> Neptune</a>
+							</div>
+						</div>
+
+
+
+					</li>
+				<li><a href="../manu/apollo.html">Mission History</a></li>\
+
+				<li><a href="#">Team</a></li>
+
+			</ul>
+		</div>
+		<div class="content">
+			<h1>ALPHASPHERE</h1>
+			<p>The only site that give the best space related news in real
+				time to its users.
+			</p><br><br><br><br>
+			<div>
+				<button onclick="openLoginPopup()" class="button_login">Login</button>
+				<button onclick="opensign_upPopup()" class="button_login"><span></span>Sign Up</button>
+
+			</div>
+			<div class="overlay" id="loginOverlay">
+				<div class="login-box">
+					<h2>Login</h2><br><br>
+					<form action="#" method="post">
+						<label for="username">Username:</label>
+						<input type="text" id="username" name="username" required><br><br>
+
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" required><br><br>
+
+						<input type="submit" value="Login">
+					</form>
+
+					<!-- Button to close the login pop-up -->
+					<button onclick="closeLoginPopup()" class="close_button">Close</button>
+				</div>
+			</div>
+			<div class="overlay" id="sign-upOverlay">
+				<div class="sign-up-box">
+					<h2>Sign Up</h2><br><br>
+					<form action="#" method="post">
+						<label for="username">Username:</label>
+						<input type="text" id="username" name="username" required><br><br>
+
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" required><br><br>
+
+						<input type="submit" value="sign-up">
+					</form>
+
+					<!-- Button to close the sign-up pop-up -->
+					<button onclick="closesign_upPopup()" class="close_button">Close</button>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<script>
+		// Function to open the login pop-up
+		function openLoginPopup() {
+			document.getElementById("loginOverlay").style.display = "block";
+		}
+
+		// Function to close the login pop-up
+		function closeLoginPopup() {
+			document.getElementById("loginOverlay").style.display = "none";
+		}
+		// Function to open the sign-up pop-up
+		function opensign_upPopup() {
+			document.getElementById("sign-upOverlay").style.display = "block";
+		}
+
+		// Function to close the sign-up pop-up
+		function closesign_upPopup() {
+			document.getElementById("sign-upOverlay").style.display = "none";
+		}
+
+	</script>
+
+
+</body>
+
+</html>
