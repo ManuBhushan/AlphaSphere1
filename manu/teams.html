@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ALPHASPHERE</title>
+	<link rel="stylesheet" href="../manu/styles.css">
+</head>
+<link rel="stylesheet" href="../manu/fonts.css">
+<link rel="shortcut icon" href="../manu/favicon.ico" type="image/x-icon">
+<style>
+	h1 {
+		font-family: 'orbitron', sans-serif;
+	}
+
+	h2 {
+		font-family: 'audiowide', sans-serif;
+	}
+
+	p {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	button {
+		font-family: 'audiowide', sans-serif;
+
+	}
+
+	strong {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	label {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	ul li a {
+		font-family: 'robotomono', sans-serif;
+	}
+
+	/* Styling for the overlay background */
+	.overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+	/* Styling for the login box */
+	.login-box {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: black;
+		padding: 20px;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+	}
+
+	.sign-up-box {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: black;
+		padding: 20px;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+	}
+
+	input[type="submit"] {
+		width: 200px;
+		padding: 15px 0;
+		text-align: center;
+		margin: 20px 10px;
+		border-radius: 25px;
+		font-weight: bold;
+		border: 2px solid #009688;
+		background: transparent;
+		color: white;
+		cursor: pointer;
+		/* The cursor property specifies the mouse cursor to be displayed 
+    when pointing over an element. */
+		position: relative;
+		overflow: hidden;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #45a049;
+		transition: 0.4s;
+	}
+
+	.button_login:hover {
+		background-color: #009688;
+		transition: 0.4s;
+	}
+
+	.close_button:hover {
+		background-color: red;
+		transition: 0.4s;
+	}
+
+	.planet button{
+		font-family: 'robotomono', sans-serif;
+	}
+
+
+    .center-table {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+/* Adjust table styles as needed */
+table {
+    /* Your table styles */
+    border-collapse: collapse;
+    /* Additional styles */
+}
+
+td {
+    /* Your cell styles */
+    padding: 10px;
+}
+
+table { border-spacing: 200px; } /* cellspacing */
+
+th, td { padding: 30px; } /* cellpadding */
+
+table td:hover img {
+            /* Define the changes you want when hovering over the image */
+            transform: scale(1.2); /* Example: increase the size */
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+
+        table td:hover h3 {
+            /* Define the changes you want when hovering over the name */
+            color: red; 
+            transform: scale(1.2);/* Example: change text color */
+            transition: color 0.5s ease; /* Smooth transition */
+        }
+
+</style>
+
+<body>
+	<div class="banner5">
+		<div class="navbar">
+			<a href="../manu/home2.html"><img src="../manu/logo3.png" alt="logo" class="logo"></a>
+			<ul>
+				<li><a href="../manu/home2.html">Home</a></li>
+				<li><a href="#">Universe</a></li>
+				<li><a href="../manu/planets.html">
+
+						<!-- Dropdown container -->
+						<div class="dropdown">
+							<button class="navbar planet">Planets</button>
+						</a>
+							<!-- Dropdown content -->
+							<div class="dropdown-content">
+								<a href="planets/1mercury.html"> Mercury</a>
+								<a href="planets/1venus.html"> Venus</a>
+								<a href="planets/1earth.html"> Earth</a>
+								<a href="planets/1mars.html"> Mars</a>
+								<a href="planets/1jupiter.html"> Jupiter</a>
+								<a href="planets/1saturn.html"> Saturn</a>
+								<a href="planets/1uranus.html"> Uranus</a>
+								<a href="planets/1neptune.html"> Neptune</a>
+							</div>
+						</div>
+
+
+
+					</li>
+				<li><a href="missionsclick.html">Mission History</a></li>\
+
+				<li><a href="#">Team</a></li>
+
+			</ul>
+		</div>
+		<div class="content">
+            <h1>Team</h1>
+            <br><br><br><br>
+			<table>
+                <tr>
+
+
+                    <td>
+                        <table >
+                            <tr><img src="planets/rengoku-removebg-preview-modified.png "width = 200px ,height = 200px  alt="">
+                                <br><br>
+                            <h3>MANU BHUSHAN</h3></tr>
+                           
+                            <tr>
+                                <td><a target=”_blank” href="https://www.linkedin.com/in/manu-bhushan-63208827b/"><img src="planets/ln-removebg-preview (1).png"width = 50px , height=50px  alt=""></a></td>
+                                <td><a target=”_blank” href="https://www.instagram.com/manu__1322_/"><img src="planets/insta-removebg-preview-removebg-preview.png"width = 30px , height=30px  alt=""></a></td>
+                                <td><a target=”_blank” href="https://github.com/ManuBhushan"><img src="planets/gitp-removebg-preview.png"width = 40px , height=30px alt=""></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                  
+                    <td>
+                        <table  >
+                            <tr><img src="planets/k.png "width = 200px ,height = 200px alt="">
+                                <br><br>
+                                <h3>MANIK DEV AZAD</h3></tr>
+                            <tr>
+                                <td><a target=”_blank” href="https://www.linkedin.com/in/manik-dev-azad-685ab9203/"><img src="planets/ln-removebg-preview (1).png" width = 50px , height=50px alt=""></a></td>
+                                <td><a target=”_blank” href="https://www.instagram.com/mani._.k_/"><img src="planets/insta-removebg-preview-removebg-preview.png"width = 30px , height=30px  alt=""></a></td>
+                                <td><a target=”_blank” href="https://github.com/Manik178"><img src="planets/gitp-removebg-preview.png"width = 40px , height=30px alt=""></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                  
+                
+                
+                </tr>
+
+                
+            </table>
+			<br><br><br><br>
+	
+
+
+</body>
+
+</html>
